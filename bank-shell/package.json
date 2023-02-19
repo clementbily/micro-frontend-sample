@@ -1,0 +1,25 @@
+{
+  "name": "bank-shell",
+  "version": "1.0.0",
+  "description": "bank shell example using vite build module federation to demonstrate microfrontend ",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p build-only",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.1.14",
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@types/jsdom": "^20.0.0",
+    "@types/node": "^16.11.68",
+    "eslint": "^8.22.0",
+    "jsdom": "^20.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "typescript": "~4.7.4",
+    "vite": "^3.1.8",
+    "vitest": "^0.24.3"
+  }
+}
