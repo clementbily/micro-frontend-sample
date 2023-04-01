@@ -1,0 +1,12 @@
+{
+  "name": "vue-accounts-lib",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "run-p type-check build-only",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit -p ../tsconfig.vitest.json --composite false",
+    "build-type": "tsc -p tsconfig.lib.json",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+  }
+}

@@ -12,13 +12,12 @@ export default defineConfig({
       name: "home",
       filename: "remoteEntry.js",
       exposes: {
-        "./BankAccounts": "./src/lib/main-lib.ts",
+        "./BankAccount": "./main-lib.ts",
       },
     }),
   ],
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
       vue: "vue/dist/vue.esm-bundler.js",
     },
   },
@@ -26,5 +25,6 @@ export default defineConfig({
     emptyOutDir: false,
     outDir: "dist",
     sourcemap: true,
+    target: "esnext",
   },
 });

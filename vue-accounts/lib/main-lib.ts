@@ -1,5 +1,5 @@
 import { defineCustomElement } from "vue";
-import TheBankAccounts from "../components/accounts/TheBankAccounts.vue";
+import TheBankAccounts from "../src/components/accounts/TheBankAccounts.vue";
 
 const TheBankAccountsElement = defineCustomElement({
   // https://github.com/vuejs/router/issues/858

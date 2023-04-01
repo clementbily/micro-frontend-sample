@@ -2,15 +2,12 @@
   "name": "vue-accounts",
   "version": "0.0.0",
   "type": "module",
+  "workspaces":["lib"],
   "scripts": {
-    "dev": "vite",
     "dev:app": "vite --config vite.app.config.ts",
-    "build": "run-p type-check build-only",
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
-    "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-    "build-type": "tsc -p tsconfig.lib.json",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {

@@ -1,5 +1,5 @@
-const lazyLoadBankAccount = () => import("bank_account/BankAccount");
-const lazyLoadBankAccounts = () => import("bank_accounts/BankAccounts");
+const lazyLoadBankAccount = () => import("bank-account/BankAccount");
+const lazyLoadBankAccounts = () => import("bank-accounts/BankAccounts");
 
 const lazyLoadedModules = Promise.all([
   lazyLoadBankAccount(),

@@ -1,5 +1,5 @@
 import { defineCustomElement } from "vue";
-import MyBankAccount from "../components/bank-account/MyBankAccount.vue";
+import MyBankAccount from "../src/components/bank-account/MyBankAccount.vue";
 
 const MyBankAccountElement = defineCustomElement({
   // https://github.com/vuejs/router/issues/858
@@ -12,4 +12,4 @@ const MyBankAccountElement = defineCustomElement({
 export async function register() {
   customElements.define("bank-account", MyBankAccountElement);
 }
-export type { BankAccount, Operation } from "../models/bank-account";
+export type { BankAccount, Operation } from "../src/models/bank-account";

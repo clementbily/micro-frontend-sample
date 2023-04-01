@@ -6,8 +6,8 @@ export default {
             
             name: 'host-app',
             remotes: {
-                bank_account: "http://localhost:5175/assets/remoteEntry.js",
-                bank_accounts: "http://localhost:5174/assets/remoteEntry.js",
+                "bank-account": "http://localhost:5175/assets/remoteEntry.js",
+                "bank-accounts": "http://localhost:5174/assets/remoteEntry.js",
             }
         })
     ],
